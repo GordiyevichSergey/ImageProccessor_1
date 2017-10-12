@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="loadImageButton" layoutX="8.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#onLoadImageButtonClicked" prefHeight="25.0" prefWidth="161.0" text="Загрузить изображение" />
+      <Button fx:id="showNormalImageButton" layoutX="9.0" layoutY="117.0" mnemonicParsing="false" onMouseClicked="#onShowNormalImageClicked" text="Показать изображение(Н)" />
+      <Button fx:id="processImageButton" layoutX="8.0" layoutY="48.0" mnemonicParsing="false" onMouseClicked="#onProcessImageButtonClicked" prefHeight="25.0" prefWidth="161.0" text="Обработка изображения" />
+      <Button fx:id="filterImageButton" layoutX="8.0" layoutY="82.0" mnemonicParsing="false" onMouseClicked="#onFilterImageButtonClicked" text="Фильтрация изображения" />
+      <Button fx:id="showProcessedHistogramButton" layoutX="185.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#onShowProcessedHistogramButtonClicked" prefHeight="25.0" prefWidth="161.0" text="Показать гистограмму(О)" />
+      <Button fx:id="showNormalHistogramButton" layoutX="185.0" layoutY="117.0" mnemonicParsing="false" onMouseClicked="#onShowNormalHistogramButtonClicked" prefHeight="25.0" prefWidth="161.0" text="Показать гистограмму(Н)" />
+      <Button fx:id="showFilteredHistogramButton" layoutX="185.0" layoutY="183.0" mnemonicParsing="false" onMouseClicked="#onShowFilteredHistogramButtonClicked" prefHeight="25.0" prefWidth="161.0" text="Показать гистограмму(Ф)" />
+      <Button fx:id="showProcessedImageButton" layoutX="8.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#onShowProcessedImageButtonClicked" text="Показать изображение(О)" />
+      <Button fx:id="showFilteredImageButton" layoutX="8.0" layoutY="183.0" mnemonicParsing="false" onMouseClicked="#onShowFilteredImageButtonClicked" text="Показать изображение(Ф)" />
+      <TextField fx:id="maskSizeTextField" layoutX="185.0" layoutY="82.0" prefHeight="25.0" prefWidth="100.0" />
+      <RadioButton fx:id="mRadioButton" layoutX="291.0" layoutY="86.0" mnemonicParsing="false" text="М/ГС" />
+      <Button fx:id="convertToGrayScaleButton" layoutX="185.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#onConvertToGrayScaleButtonClicked" prefHeight="25.0" prefWidth="161.0" text="Перевести в полутоновое" />
+      <CheckBox fx:id="grayscaleCheckBox" layoutX="185.0" layoutY="52.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="160.0" text="Полутоновое" />
+   </children>
+</AnchorPane>
